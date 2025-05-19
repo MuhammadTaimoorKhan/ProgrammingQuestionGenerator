@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 
 # Load API key from environment
 
-api_key=st.secrets("GOOGLE_API_KEY")
+api_key=st.secrets["GOOGLE_API_KEY"]
 # Initialize model
 model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", api_key=api_key)
 
